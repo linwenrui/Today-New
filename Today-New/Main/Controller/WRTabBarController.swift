@@ -45,6 +45,7 @@ class WRTabBarController: UITabBarController {
             setDayChildController(controller: childController, imageName: imageName)
         }
         childController.title = title
+        childController.view.backgroundColor = UIColor.white
         // 添加导航控制器为 TabBarController 的子控制器
         let navVc = WRNavigationController(rootViewController: childController)
         addChildViewController(navVc)
